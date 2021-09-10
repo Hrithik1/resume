@@ -1,0 +1,14 @@
+mat-card {
+  width: 40%;
+  margin-right: 140px;
+  float: right;
+  margin-top: 130px;
+}
+.image {
+  float: left;
+  margin-left: 200px;
+  height: 400px;
+}
+button:hover {
+  box-shadow: 2px 2px 8px rgba(255, 114, 93, 0.568);
+}

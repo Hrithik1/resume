@@ -1,0 +1,71 @@
+<div class="title">
+  <h1 style="font-weight: 900;">resume.com</h1>
+  <p style="margin-top: 30px; max-width: 100%;">Writing a resume is a daunting task: stressful, confusing, and takes too
+    much time. But
+    not anymore — Let
+    resume.com lead the way.</p>
+</div>
+
+<mat-card style="box-shadow: none;  background-image: linear-gradient(
+  to top,
+  rgba(255, 0, 0, 0),
+  rgba(0, 81, 255, 0.03)
+); ">
+  <form (submit)="onLogin(loginform)" #loginform="ngForm">
+    <mat-form-field style="margin-top: 30px;">
+      <input type="email" matInput ngModel placeholder="Enter Email" name="email" required email #email="ngModel" />
+      <mat-error *ngIf="email.invalid" style="font-family: 'Montserrat', sans-serif;">Enter valid email</mat-error>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input type="password" name="pass" matInput ngModel placeholder="Enter Password" required #pass="ngModel" />
+      <mat-error *ngIf="pass.invalid" style="font-family: 'Montserrat', sans-serif;">Enter valid password</mat-error>
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="primary" type="submit">Login</button>
+    <div class="newtoresume">
+      <p>New to resume.com ?</p>
+      <a routerLink="/register">Register</a>
+    </div>
+  </form>
+
+</mat-card>
+<div class="title">
+  <h3>Your resume. Redefined.</h3>
+</div>
+<div class="righttext">
+  <h2>Get it done with resume.com</h2>
+  <p>resume.com. The solution you needed, but didn’t know about. Your resume will finally show your potential.
+    Personalize dozens of resume templates.
+    Get read-to-use suggestions—just pick and drop like online shopping. Impress recruiters with a professional design.
+    Prove to employers who you are—the best candidate for the job.
+  </p>
+</div>
+<div class="leftimagediv">
+  <img class="leftimage" src="https://asktalentservices.com/wp-content/uploads/2020/02/Our-Recruitment-Partners.svg"
+    alt="">
+</div>
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="box2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>

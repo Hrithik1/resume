@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+/* @import "~https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"; */
+
+/* html,
+body {
+  height: 100%;
+  margin-top: 7rem;
+} */
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}

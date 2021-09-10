@@ -1,0 +1,41 @@
+<mat-toolbar class="mat-elevation-z4" style="
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  ">
+  <span><a mat-button style="font-size: 20px; font-family: 'Montserrat', sans-serif">resume.com</a></span>
+  <span class="space"></span>
+  <ul>
+    <li *ngIf="this.userService.isLogged()">
+      <a class="create" mat-button routerLink="/resume" routerLinkActive="mat-accent" style="
+          font-family: 'Montserrat', sans-serif;
+          background-color: rgba(0, 0, 0, 0.01);
+        ">Create Resume</a>
+    </li>
+    <li *ngIf="this.userService.isLogged()">
+      <a mat-button routerLink="/search" routerLinkActive="mat-accent"
+        style="font-family: 'Montserrat', sans-serif">Your Resume</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li *ngIf="!this.userService.isLogged()">
+      <a mat-button routerLink="/login" routerLinkActive="mat-accent"
+        style="font-family: 'Montserrat', sans-serif">Login</a>
+    </li>
+
+    <li *ngIf="!this.userService.isLogged()">
+      <a mat-button routerLink="/register" routerLinkActive="mat-accent"
+        style="font-family: 'Montserrat', sans-serif">Register</a>
+    </li>
+
+    <li *ngIf="this.userService.isLogged()">
+      <a mat-button routerLink="/profile" routerLinkActive="mat-accent"
+        style="font-family: 'Montserrat', sans-serif">Profile</a>
+    </li>
+
+    <li *ngIf="this.userService.isLogged()">
+      <a mat-button (click)="onLogout()" style="font-family: 'Montserrat', sans-serif">Logout</a>
+    </li>
+  </ul>
+</mat-toolbar>

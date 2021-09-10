@@ -1,0 +1,156 @@
+mat-card {
+  width: auto;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+button:hover {
+  box-shadow: 2px 2px 8px rgba(50, 0, 90, 0.568);
+}
+mat-form-field {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  background-color: transparent;
+}
+.registerbutton {
+  margin: auto;
+  border-radius: 0px;
+  background-color: rgba(255, 0, 98, 0.568);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: auto;
+  font-family: "Montserrat", sans-serif;
+}
+.title {
+  text-align: center;
+}
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 40px;
+  background-color: rgba(51, 255, 0, 0.4);
+}
+.box2 div {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  border-radius: 60px;
+  /* border: 1px solid rgba(150, 151, 73, 0.2); */
+  background-color: rgba(0, 68, 255, 0.25);
+}
+.box div:nth-child(1) {
+  top: 12%;
+  left: 25%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 70%;
+  left: 20%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 20%;
+  left: 50%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+.box2 div:nth-child(1) {
+  top: 4%;
+  left: 10%;
+  animation: animate 10s linear infinite;
+}
+.box2 div:nth-child(2) {
+  top: 27%;
+  left: 67%;
+  animation: animate 17s linear infinite;
+}
+.box2 div:nth-child(3) {
+  top: 90%;
+  left: 5%;
+  animation: animate 12s linear infinite;
+}
+.box2 div:nth-child(4) {
+  top: 50%;
+  left: 23%;
+  animation: animate 13s linear infinite;
+}
+.box2 div:nth-child(5) {
+  top: 40%;
+  left: 37%;
+  animation: animate 6s linear infinite;
+}
+.box2 div:nth-child(6) {
+  top: 60%;
+  left: 70%;
+  animation: animate 4s linear infinite;
+}
+.box2 div:nth-child(7) {
+  top: 77%;
+  left: 59%;
+  animation: animate 9s linear infinite;
+}
+.box2 div:nth-child(8) {
+  top: 98%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+.box2 div:nth-child(9) {
+  top: 20%;
+  left: 60%;
+  animation: animate 15s linear infinite;
+}
+.box2 div:nth-child(10) {
+  top: 70%;
+  left: 50%;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.02) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.6) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}

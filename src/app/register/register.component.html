@@ -1,0 +1,79 @@
+<div class="title">
+  <h1 style="font-weight: 900;">Build a resume that gets you hired—</h1>
+  <p style="margin-top: 30px;">You’re a lot of things. But you don’t have to be a resume writer. Don’t let your resume
+    hold you back. With the resume.com editor, you’ll create a document that gives you the confidence you deserve:</p>
+</div>
+
+<mat-card style="box-shadow: none;  background-image: linear-gradient(
+  to top,
+  rgba(255, 255, 255, 0),
+  rgba(132, 0, 255, 0.03)
+);">
+  <form (submit)="onRegister(signupform)" #signupform="ngForm">
+    <mat-form-field style="margin-top: 30px;font-family: 'Montserrat', sans-serif;">
+      <input type="text" matInput ngModel placeholder="First Name" name="fname" required #fname="ngModel" />
+      <mat-error *ngIf="fname.invalid">Enter valid name</mat-error>
+    </mat-form-field><br>
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input type="text" matInput ngModel placeholder="Last Name" name="lname" #lname="ngModel" />
+      <mat-error *ngIf="lname.invalid">Enter valid name</mat-error>
+    </mat-form-field><br>
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input type="email" matInput ngModel email placeholder="Email" name="email" required #email="ngModel" />
+      <mat-error *ngIf="email.invalid">Enter valid email</mat-error>
+    </mat-form-field><br>
+
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input style="font-family: 'Montserrat', sans-serif;" type="tel" matInput ngModel name="phone"
+        placeholder="Phone Number" #phone="ngModel" />
+      <mat-error style="font-family: 'Montserrat', sans-serif;" *ngIf="phone.invalid">Enter valid phone number
+      </mat-error>
+    </mat-form-field><br>
+    <div class="radio-inline" style="font-family: 'Montserrat', sans-serif;">
+      <input type="radio" ngModel name="gender" value="male" />Male
+    </div>
+    <div class="radio-inline" style="font-family: 'Montserrat', sans-serif;">
+      <input type="radio" ngModel name="gender" value="female" />Female<br />
+    </div><br>
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input type="number" name="age" ngModel matInput placeholder="Age" #age="ngModel" />
+      <mat-error *ngIf="age.invalid">Enter valid age</mat-error>
+    </mat-form-field><br>
+
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input type="password" name="pass" matInput ngModel placeholder="Password" required
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" #pass="ngModel" />
+      <mat-error *ngIf="pass.invalid">Enter valid password</mat-error>
+    </mat-form-field><br>
+    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+      <input type="password" matInput ngModel name="cpass" placeholder="Confirm Password" required #cpass="ngModel" />
+      <mat-error *ngIf="cpass.invalid">Passwords don't match</mat-error>
+    </mat-form-field><br>
+    <button style="background-color: rgba(118, 0, 172, 0.336)
+    ;" class="registerbutton" mat-raised-button color="accent" type="submit">Register</button>
+  </form>
+</mat-card>
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="box2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
