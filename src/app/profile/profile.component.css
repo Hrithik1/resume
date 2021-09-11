@@ -237,11 +237,12 @@ i {
 }
 .arrow {
   position: fixed;
-  top: 13%;
+  top: 10%;
   left: 75%;
   margin-left: -20px;
   width: 40px;
-  height: 60px; /*change with size of arrow to make sit on bottom */
+  height: 60px;
+  z-index: 2; /*change with size of arrow to make sit on bottom */
   /*   background-image: url(); */
   /*   background-size: contain; */
 }

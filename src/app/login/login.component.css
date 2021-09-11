@@ -10,7 +10,7 @@ mat-card {
 mat-form-field {
   padding-left: 20px;
   padding-right: 20px;
-  width: auto;
+  width: 30%;
   background-color: transparent;
 }
 button {
