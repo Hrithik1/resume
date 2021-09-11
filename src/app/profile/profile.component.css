@@ -6,7 +6,7 @@ mat-card {
 .motto {
   text-align: center;
   float: left;
-  margin-left: 400px;
+  margin-left: 480px;
   /* margin-top: 100px; */
   width: 34%;
   margin-bottom: 20px;
@@ -14,7 +14,7 @@ mat-card {
 .motto2 {
   text-align: justify;
   float: left;
-  margin-left: 400px;
+  margin-left: 480px;
   width: 34%;
   margin-bottom: 20px;
 }
@@ -165,18 +165,6 @@ mat-form-field {
 
 /* 
 Arrow animation */
-
-.words {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 50px;
-  width: 300px;
-  margin-left: -150px;
-  margin-top: -25px;
-}
-
 @-moz-keyframes bounce {
   0%,
   20%,
@@ -248,9 +236,9 @@ i {
   color: rgb(0, 16, 39);
 }
 .arrow {
-  position: absolute;
+  position: fixed;
   top: 13%;
-  left: 71%;
+  left: 75%;
   margin-left: -20px;
   width: 40px;
   height: 60px; /*change with size of arrow to make sit on bottom */

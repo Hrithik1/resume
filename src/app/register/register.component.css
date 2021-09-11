@@ -1,3 +1,6 @@
+* {
+  color: rgb(0, 21, 41);
+}
 mat-card {
   width: auto;
   padding: 10px;
@@ -5,7 +8,7 @@ mat-card {
   text-align: center;
 }
 button:hover {
-  box-shadow: 2px 2px 8px rgba(50, 0, 90, 0.568);
+  box-shadow: 2px 2px 8px rgb(35, 65, 109);
 }
 mat-form-field {
   padding-left: 20px;
@@ -24,8 +27,83 @@ mat-form-field {
   width: auto;
   font-family: "Montserrat", sans-serif;
 }
-.title {
+.title2 {
   text-align: center;
+  margin-top: 140px;
+}
+.middletext {
+  margin-top: 100px;
+  text-align: center;
+}
+.middleimage {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 960px;
+  display: block;
+  left: 340px;
+}
+.lefttext {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  top: 1800px;
+  width: 40%;
+  text-align: center;
+}
+.leftimage {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 90px;
+  top: 1600px;
+  display: inline-block;
+}
+.righttext {
+  display: inline-block;
+  position: absolute;
+  right: 70px;
+  top: 2400px;
+  width: 40%;
+  text-align: center;
+}
+.rightimage {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 90px;
+  top: 2250px;
+  display: inline-block;
+}
+.create2 {
+  position: absolute;
+  top: 2600px;
+  display: block;
+  left: 970px;
+  text-align: center;
+}
+.create2 a {
+  border-radius: 20px;
+  text-decoration: none;
+}
+.create2 a:hover {
+  box-shadow: 2px 2px 8px rgb(35, 65, 109);
+  zoom: normal;
+}
+.foot {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgba(0, 81, 255, 0.03)
+  );
+  position: absolute;
+  top: 2800px;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .box div {
   position: absolute;

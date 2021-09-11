@@ -1,3 +1,6 @@
+* {
+  color: rgb(0, 21, 41);
+}
 mat-card {
   max-width: 100%;
   padding: 10px;
