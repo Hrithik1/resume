@@ -26,7 +26,7 @@ button:hover {
 }
 .title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 140px;
 }
 .newtoresume {
   margin-top: 7px;
@@ -35,7 +35,7 @@ button:hover {
   display: inline-block;
   position: absolute;
   left: 70px;
-  top: 700px;
+  top: 800px;
   width: 40%;
   text-align: center;
 }
@@ -44,10 +44,88 @@ button:hover {
   height: auto;
   position: absolute;
   right: 70px;
-  top: 600px;
+  top: 700px;
+  display: inline-block;
+}
+.righttext2 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 70px;
+  top: 1160px;
+  display: inline-block;
+  text-align: center;
+}
+.leftimage2 {
+  width: 33%;
+  height: auto;
+  position: absolute;
+  left: 100px;
+  top: 1060px;
+  display: inline-block;
+  opacity: 75%;
+}
+.righttext3 {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  top: 1500px;
+  width: 40%;
+  text-align: center;
+}
+.leftimage3 {
+  width: 33%;
+  height: auto;
+  position: absolute;
+  right: 70px;
+  top: 1400px;
   display: inline-block;
 }
 
+.righttext4 {
+  position: absolute;
+  top: 1850px;
+  left: 145px;
+  width: 80%;
+  text-align: center;
+}
+.leftimage4 {
+  width: 50%;
+  position: absolute;
+  top: 2000px;
+  display: block;
+  left: 350px;
+  text-align: center;
+}
+.create {
+  position: absolute;
+  top: 2450px;
+  display: block;
+  left: 600px;
+  text-align: center;
+}
+.create a {
+  border-radius: 20px;
+  text-decoration: none;
+}
+.create a:hover {
+  box-shadow: 2px 2px 8px rgb(35, 65, 109);
+}
+.foot {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgba(0, 81, 255, 0.03)
+  );
+  position: absolute;
+  top: 2560px;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 .box div {
   position: absolute;
   width: 60px;
@@ -64,6 +142,14 @@ button:hover {
   border-radius: 60px;
   /* border: 1px solid rgba(0, 0, 0, 0.2); */
   background-color: rgba(0, 255, 13, 0.4);
+}
+.box3 div {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 200px;
+  background-color: rgba(0, 38, 255, 0.05);
 }
 .box div:nth-child(1) {
   top: 12%;
@@ -165,6 +251,51 @@ button:hover {
   left: 50%;
   animation: animate 10s linear infinite;
 }
+.box3 div:nth-child(1) {
+  top: 100%;
+  left: 7%;
+  animation: animate 20s linear infinite;
+}
+.box3 div:nth-child(2) {
+  top: 194%;
+  left: 7%;
+  animation: animate 20s linear infinite;
+}
+.box3 div:nth-child(3) {
+  top: 260%;
+  left: 70%;
+  animation: animate 20s linear infinite;
+}
+.box3 div:nth-child(4) {
+  top: 145%;
+  left: 55%;
+  animation: animate 20s linear infinite;
+}
+.box3 div:nth-child(5) {
+  top: 285%;
+  left: 55%;
+  animation: animate 20s linear infinite;
+}
+.box3 div:nth-child(6) {
+  top: 170%;
+  left: 35%;
+  animation: animate 10s linear infinite;
+}
+.box3 div:nth-child(7) {
+  top: 280%;
+  left: 75%;
+  animation: animate 15s linear infinite;
+}
+.box3 div:nth-child(8) {
+  top: 230%;
+  left: 1%;
+  animation: animate 7s linear infinite;
+}
+.box3 div:nth-child(9) {
+  top: 280%;
+  left: 1%;
+  animation: animate 17s linear infinite;
+}
 @keyframes animate {
   0% {
     transform: scale(0.02) translateY(0) rotate(0);
@@ -174,4 +305,8 @@ button:hover {
     transform: scale(0.7) translateY(-90px) rotate(360deg);
     opacity: 0;
   }
+}
+
+.back {
+  z-index: -1;
 }
