@@ -2,41 +2,45 @@ mat-card {
   background-color: transparent;
   width: 25%;
   margin: auto;
-  /* margin-top: 10rem; */
 }
 .motto {
   text-align: center;
-  float: left;
-  margin-left: 400px;
   width: 34%;
+  margin: auto;
 }
 .motto2 {
   text-align: justify;
-  float: left;
   margin-top: 50px;
-  margin-left: 400px;
-  width: 34%;
+  margin: auto;
+  width: 30%;
 }
 button:hover {
   box-shadow: 2px 2px 8px rgba(0, 89, 255, 0.568);
 }
 mat-form-field {
   width: 100%;
-  /* background-color: rgba(255, 255, 255); */
   background-color: transparent;
 }
-.wrapper {
-  position: absolute;
-  width: 100%;
-  height: 250%;
-  overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 0.6, 0.1) 0%,
-    rgba(9, 9, 121, 0.1) 35%,
-    rgba(0, 212, 255, 0.1) 100%
-  );
+
+.searchbtn {
+  width: 25%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: rgb(0, 58, 117);
+  border-radius: 40px;
 }
+.image1 {
+  z-index: -2;
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 100px;
+  display: block;
+  opacity: 20%;
+  left: 530px;
+}
+
 .box div {
   position: absolute;
   width: 60px;

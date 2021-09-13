@@ -9,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
-
+  data:any;
   constructor(private usersService:UsersService, private router : Router) { }
 
   ngOnInit(): void {
+    this.usersService.getProfile().subscribe(
+      (res) => {this.data = res},
+      (err) => {console.log(err)}
+    );
   }
   onSubmit(form: NgForm) {
     if (form.invalid) {

@@ -10,7 +10,7 @@
 <mat-card style="box-shadow: none;  background-image: linear-gradient(
   to top,
   rgba(255, 0, 0, 0),
-  rgba(0, 81, 255, 0.03)
+  rgba(0, 116, 233, 0.04)    
 ); ">
   <form (submit)="onLogin(loginform)" #loginform="ngForm">
     <mat-form-field style="margin-top: 30px;">
@@ -23,10 +23,10 @@
       <mat-error *ngIf="pass.invalid" style="font-family: 'Montserrat', sans-serif;">Enter valid password</mat-error>
     </mat-form-field>
     <br />
-    <button mat-raised-button color="primary" type="submit">Login</button>
+    <button class="loginbutton" mat-raised-button color="primary" type="submit">Login</button>
     <div class="newtoresume">
       <p>New to resume.com ?</p>
-      <a routerLink="/register">Register</a>
+      <a routerLink="/register">Create Account</a>
     </div>
   </form>
 
@@ -89,7 +89,7 @@
 
 
 <div class="create">
-  <a mat-raised-button color="primary" href="#Title">Create Your Resume Now</a>
+  <a class="createbtn" mat-raised-button color="primary" href="#Title">Create Your Resume Now</a>
 </div>
 
 <div class="foot">
