@@ -228,9 +228,6 @@ Arrow animation */
 .container {
   height: 30vh;
 }
-/* .below {
-  height: 100vh;
-} */
 i {
   display: block;
   color: rgb(0, 16, 39);
@@ -238,13 +235,11 @@ i {
 .arrow {
   position: fixed;
   top: 10%;
-  left: 75%;
+  left: 73%;
   margin-left: -20px;
   width: 40px;
   height: 60px;
-  z-index: 2; /*change with size of arrow to make sit on bottom */
-  /*   background-image: url(); */
-  /*   background-size: contain; */
+  z-index: 2;
 }
 
 .bounce {
