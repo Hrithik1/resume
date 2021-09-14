@@ -35,10 +35,10 @@ router.post("/login", async (req, res) => {
       const token = await RegisterData.generateToken();
       res.status(201).json(token);
     } else {
-      res.status(400).json({ error: "Password Incorrect!!" });
+      res.status(400).json("Password Incorrect!!");
     }
   } catch (error) {
-    res.status(400).json({ Error: "Email Does not Exist!!" });
+    res.status(400).json("Email Does not Exist!!");
   }
 });
 

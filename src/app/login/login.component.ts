@@ -32,10 +32,13 @@ export class LoginComponent implements OnInit{
       },
       (err) => {
         {
-          console.log(err), alert('Invalid Credentials');
+          console.log(err.error), alert(err.error);
         }
       }
     );
   }
+
+  top(){
+    window.scrollTo(0,0);  }
 }
 

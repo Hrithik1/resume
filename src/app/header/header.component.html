@@ -3,7 +3,13 @@
     box-shadow: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   ">
-  <span><a mat-button style="font-size: 20px; font-family: 'Montserrat', sans-serif">resume.com</a></span>
+  <span>
+    <a routerLink="/login">
+      <h3 class="logo" style="font-family: 'Montserrat', sans-serif;color: rgb(0, 58, 117);; font-weight: 900;">
+        resume.com
+      </h3>
+    </a>
+  </span>
   <span class="space"></span>
   <ul>
     <li *ngIf="this.userService.isLogged()">

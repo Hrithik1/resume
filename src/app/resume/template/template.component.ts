@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UsersService } from 'src/app/users.service';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 interface userData {
   firstname: string;
@@ -46,5 +48,21 @@ export class TemplateComponent implements OnInit {
         this.router.navigate(['/search']);
       }
     );
+
 }
+@ViewChild('contentToConvert', { static: false })
+  contentToConvert!: ElementRef;
+  public downloadPdf() {
+    let filename = this.data.firstname;
+    const doc = new jsPDF('p', 'mm', 'a4');
+    var width = doc.internal.pageSize.getWidth();
+    var height = doc.internal.pageSize.getHeight();
+    const node = this.contentToConvert.nativeElement;
+    html2canvas(node).then(function (canvas) {
+      doc.internal.scaleFactor = 4;
+      var img = canvas.toDataURL('image/png');
+      doc.addImage(img, 'PNG', 0, 0.1, width, height);
+      doc.save(`${filename}_Resume.pdf`);
+    });
+  }
 }

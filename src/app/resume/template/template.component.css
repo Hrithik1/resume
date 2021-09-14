@@ -1,0 +1,12 @@
+.downloadbtn {
+  background-color: transparent;
+  border-radius: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 15px;
+  left: 100%;
+  opacity: 0.8;
+}
+.downloadbtn:hover {
+  opacity: 1;
+}

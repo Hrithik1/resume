@@ -31,4 +31,7 @@ export class RegisterComponent implements OnInit {
       }
     );
   }
+
+  top(){
+    window.scrollTo(0,0);  }
 }
