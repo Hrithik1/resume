@@ -1,125 +1,262 @@
 <div class="motto">
-  <h1 style=" font-family: 'Montserrat', sans-serif;color: rgb(0, 21, 41); font-weight:900;">
+  <h1
+    style="
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(0, 21, 41);
+      font-weight: 900;
+    "
+  >
     Build a resume that gets you hired—
   </h1>
-  <p style="font-size: 15px;">You’re a lot of things. But you don’t have to be a resume writer. Don’t let your resume
-    hold you back. With the <strong> resume.com </strong> editor, you’ll create a document that gives you the
-    confidence
-    you deserve:
+  <p style="font-size: 15px">
+    You’re a lot of things. But you don’t have to be a resume writer. Don’t let
+    your resume hold you back. With the <strong> resume.com </strong> editor,
+    you’ll create a document that gives you the confidence you deserve:
   </p>
 
-  <img class="image1"
-    src="https://cdn-images.zety.com/images/zety/landings/templates/resume-templates-two-column-6@3x.png" alt="">
+  <img
+    class="image1"
+    src="https://cdn-images.zety.com/images/zety/landings/templates/resume-templates-two-column-6@3x.png"
+    alt=""
+  />
 
-  <h1 style=" font-family: 'Montserrat', sans-serif;color: rgb(0, 21, 41); font-weight:900;margin-top: 500px;">
+  <h1
+    style="
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(0, 21, 41);
+      font-weight: 900;
+      margin-top: 500px;
+    "
+  >
     FAST
   </h1>
-  <p style="font-size: 15px; text-align: left;">
-    You’ll be done faster than your competition. You should be out there enjoying your new career, not typing a resume.
-    <strong> resume.com's </strong>helper will help you pick the right template, let you add information in a few
-    clicks and save your time.
-    <li> Access the online resume builder from anywhere at any time.</li>
-    <li> Download or print your resume when you need to.</li>
-    <li> Upload your past resume and give it a makeover.</li>
+  <p style="font-size: 15px; text-align: left">
+    You’ll be done faster than your competition. You should be out there
+    enjoying your new career, not typing a resume.
+    <strong> resume.com's </strong>helper will help you pick the right template,
+    let you add information in a few clicks and save your time.
+    <li>Access the online resume builder from anywhere at any time.</li>
+    <li>Download or print your resume when you need to.</li>
+    <li>Upload your past resume and give it a makeover.</li>
   </p>
 </div>
 
 <mat-card
-  style="box-shadow: none; font-family: 'Montserrat', sans-serif;  border-top-right-radius: 60px;border-top-left-radius: 60px;">
+  style="
+    box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  "
+>
   <br />
   <form (submit)="onSubmit(resumeform)" #resumeform="ngForm">
-    <mat-form-field style="width: 30%;font-family: 'Montserrat', sans-serif; margin-bottom: 0; position: absolute;">
+    <mat-form-field
+      style="
+        width: 30%;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0;
+        position: absolute;
+      "
+    >
       <mat-label>Firstname</mat-label>
-      <input type="text" matInput ngModel required placeholder="Firstname" name="firstname" />
-    </mat-form-field><br />
+      <input
+        type="text"
+        matInput
+        ngModel
+        required
+        placeholder="Firstname"
+        name="firstname"
+      /> </mat-form-field
+    ><br />
 
     <mat-form-field
-      style="width: 30%;font-family: 'Montserrat', sans-serif; top:35px ;margin-left: 270px; position: absolute;">
+      style="
+        width: 30%;
+        font-family: 'Montserrat', sans-serif;
+        top: 35px;
+        margin-left: 270px;
+        position: absolute;
+      "
+    >
       <mat-label>Lastname</mat-label>
-      <input matInput ngModel type="text" required placeholder="Lastname" name="lastname" />
-    </mat-form-field><br /><br>
-
-    <mat-form-field style="width: 30%;font-family: 'Montserrat', sans-serif; position: absolute;">
-      <mat-label>Email</mat-label>
-      <input matInput ngModel type="text" required placeholder="Email" name="email" />
-    </mat-form-field><br />
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="Lastname"
+        name="lastname"
+      /> </mat-form-field
+    ><br /><br />
 
     <mat-form-field
-      style="width: 30%;font-family: 'Montserrat', sans-serif; position: absolute;margin-left: 270px;top: 95px;">
+      style="
+        width: 30%;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+      "
+    >
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="Email"
+        name="email"
+      /> </mat-form-field
+    ><br />
+
+    <mat-form-field
+      style="
+        width: 30%;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        margin-left: 270px;
+        top: 95px;
+      "
+    >
       <mat-label>Phone</mat-label>
-      <input matInput ngModel type="tel" required placeholder="Phone" name="phone" />
-    </mat-form-field><br /><br>
+      <input
+        matInput
+        ngModel
+        type="tel"
+        required
+        placeholder="Phone"
+        name="phone"
+      /> </mat-form-field
+    ><br /><br />
 
-    <mat-form-field style=" width: 35%;font-family: 'Montserrat', sans-serif; ">
+    <mat-form-field style="width: 35%; font-family: 'Montserrat', sans-serif">
       <mat-label>Profession</mat-label>
-      <input matInput ngModel type="text" required placeholder="Profession" name="profession" />
-    </mat-form-field><br />
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="Profession"
+        name="profession"
+      /> </mat-form-field
+    ><br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
       <mat-label>Introduction</mat-label>
-      <textarea matInput ngModel name="intro" placeholder="Briefly tell us about yourself" rows="4"
-        cols="50"></textarea>
-    </mat-form-field><br />
+      <textarea
+        matInput
+        ngModel
+        name="intro"
+        placeholder="Briefly tell us about yourself"
+        rows="4"
+        cols="50"
+      ></textarea></mat-form-field
+    ><br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
       <mat-label>Address</mat-label>
-      <textarea name="address" rows="4" cols="50" matInput ngModel></textarea>
-    </mat-form-field><br /><br />
-
+      <textarea
+        name="address"
+        rows="4"
+        cols="50"
+        matInput
+        ngModel
+      ></textarea></mat-form-field
+    ><br /><br />
 
     <mat-label> <strong> Education </strong></mat-label>
-    <button class="addsub" mat-icon-button type="button"><i class="fas fa-plus"></i></button>
-    <button class="addsub" mat-icon-button type="button"><i class="fas fa-minus"></i></button>
-    <!-- <mat-form-field appearance="outline"> -->
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
-      <input matInput ngModel type="text" required placeholder="School" name="school" />
-    </mat-form-field><br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
-      <input matInput ngModel type="number" required placeholder="YYYY" name="year" />
-    </mat-form-field><br />
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="School"
+        name="school"
+      /> </mat-form-field
+    ><br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
-      <input matInput ngModel type="text" placeholder="Degree" name="degree" />
-    </mat-form-field><br />
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
+      <input
+        matInput
+        ngModel
+        type="number"
+        required
+        placeholder="YYYY"
+        name="year"
+      /> </mat-form-field
+    ><br />
+
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
+      <input
+        matInput
+        ngModel
+        type="text"
+        placeholder="Degree"
+        name="degree"
+      /> </mat-form-field
+    ><br />
     <!-- </mat-form-field> -->
-    <br>
+    <br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
       <mat-label> <strong> Skills </strong></mat-label>
-      <textarea matInput ngModel name="skills" placeholder="Enter Skills seperated with comma.." rows="4"
-        cols="50"></textarea>
-    </mat-form-field><br />
+      <textarea
+        matInput
+        ngModel
+        name="skills"
+        placeholder="Enter Skills seperated with comma.."
+        rows="4"
+        cols="50"
+      ></textarea></mat-form-field
+    ><br />
     <br />
 
     <mat-label> <strong> Projects </strong></mat-label>
-    <button class="addsub" mat-icon-button type="button"><i class="fas fa-plus"></i></button>
-    <button class="addsub" mat-icon-button type="button"><i class="fas fa-minus"></i></button>
-    <!-- <mat-form-field appearance="outline"> -->
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
-      <input matInput ngModel type="text" required placeholder="Title" name="title" />
-    </mat-form-field><br />
 
-    <mat-form-field style="font-family: 'Montserrat', sans-serif;">
-      <input matInput ngModel type="text" required placeholder="Description" name="work" />
-    </mat-form-field><br />
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="Title"
+        name="title"
+      /> </mat-form-field
+    ><br />
+
+    <mat-form-field style="font-family: 'Montserrat', sans-serif">
+      <input
+        matInput
+        ngModel
+        type="text"
+        required
+        placeholder="Description"
+        name="work"
+      /> </mat-form-field
+    ><br />
     <!-- </mat-form-field> -->
-    <button class="submit" mat-raised-button color="primary" type="submit" style="
-          margin-left: 290px;
-          margin-top: 10px;
-          background-color: rgb(0, 58, 117);border-radius: 20px;width: 180px;">
+    <button
+      class="submit"
+      mat-raised-button
+      color="primary"
+      type="submit"
+      style="
+        margin-left: 290px;
+        margin-top: 10px;
+        background-color: rgb(0, 58, 117);
+        border-radius: 20px;
+        width: 180px;
+      "
+    >
       Submit Details
     </button>
   </form>
 </mat-card>
 
-
 <div class="foot">
   <footer>&copy; resume.com 2021</footer>
 </div>
-
-
-
 
 <div class="box">
   <div></div>

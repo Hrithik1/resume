@@ -54,7 +54,7 @@ export class TemplateComponent implements OnInit {
   contentToConvert!: ElementRef;
   public downloadPdf() {
     let filename = this.data.firstname;
-    const doc = new jsPDF('p', 'mm', 'a4');
+    const doc = new jsPDF('l', 'mm', 'a3');
     var width = doc.internal.pageSize.getWidth();
     var height = doc.internal.pageSize.getHeight();
     const node = this.contentToConvert.nativeElement;

@@ -1,12 +1,30 @@
 .downloadbtn {
-  background-color: transparent;
-  border-radius: 60px;
+  background-color: rgb(0, 28, 56);
+  border-radius: 40px;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 15px;
-  left: 100%;
-  opacity: 0.8;
+  bottom: 20px;
+  left: 90%;
+  opacity: 0.85;
+  color: white;
+  padding: 10px;
+  font-size: 13px;
 }
 .downloadbtn:hover {
   opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.foot {
+  background-color: rgb(0, 28, 56);
+  position: absolute;
+  top: 940px;
+  width: 100%;
+  z-index: -2;
+}
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: white;
 }

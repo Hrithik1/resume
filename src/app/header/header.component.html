@@ -41,7 +41,8 @@
     </li>
 
     <li *ngIf="this.userService.isLogged()">
-      <a mat-button (click)="onLogout()" style="font-family: 'Montserrat', sans-serif">Logout</a>
+      <a mat-button (click)="onLogout()"
+        style="font-family: 'Montserrat', sans-serif; color: rgb(155, 0, 0);">Logout</a>
     </li>
   </ul>
 </mat-toolbar>

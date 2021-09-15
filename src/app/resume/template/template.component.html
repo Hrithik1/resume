@@ -1,9 +1,8 @@
 <style>
   body {
     font-family: "Montserrat", sans-serif;
-    padding-left: 150px;
-    padding-right: 150px;
     height: 200px;
+    font-weight: 900;
   }
 
   .left {
@@ -31,8 +30,9 @@
   }
 
   .outer {
-
-    box-shadow: 10px 20px 30px rgba(0, 13, 54, 0.1);
+    margin: auto;
+    width: 80%;
+    /* box-shadow: 10px 20px 30px rgba(0, 13, 54, 0.1); */
     height: 700px;
   }
 </style>
@@ -42,93 +42,95 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <br />
-  <div #contentToConvert class=" wrapper">
-    <div class="outer">
-      <div class="left">
-        <h1>{{ data.firstname }} {{ data.lastname }}</h1>
+  <div #contentToConvert class="outer">
+    <div class="left">
+      <h1>{{ data.firstname }} {{ data.lastname }}</h1>
 
-        <h4>{{ data.profession }}</h4>
-        <br /><br />
+      <h4>{{ data.profession }}</h4>
+      <br /><br />
 
-        <div class="contact">
-          <h4 style="
+      <div class="contact">
+        <h4 style="
               background-image: linear-gradient(
                 to left,
                 rgba(38, 0, 255, 0),
-                rgba(0, 110, 255, 0.06)
+                rgba(0, 89, 255, 0.2)
               );
             ">
-            Contact
-          </h4>
-          <br />
-          <h5>Address</h5>
-          <p>{{ data.address }}</p>
-          <h5>Phone</h5>
-          <p>{{ data.phone }}</p>
-          <h5>Email</h5>
-          <p>{{ data.email }}</p>
-          <br />
-        </div>
+          Contact
+        </h4>
         <br />
-        <div class="skills">
-          <h4 style="
+        <h5>Address</h5>
+        <p>{{ data.address }}</p>
+        <h5>Phone</h5>
+        <p>{{ data.phone }}</p>
+        <h5>Email</h5>
+        <p>{{ data.email }}</p>
+        <br />
+      </div>
+      <br />
+      <div class="skills">
+        <h4 style="
               background-image: linear-gradient(
                 to left,
                 rgba(0, 68, 255, 0),
-                rgba(0, 68, 255, 0.06)
+                rgba(0, 89, 255, 0.2)
               );
             ">
-            Skills
-          </h4>
-          <p>{{ data.skills }}</p>
+          Skills
+        </h4>
+        <p>{{ data.skills }}</p>
 
-        </div>
       </div>
-      <div class="right">
-        <br />
-        <div class="intro">
-          <p>{{ data.intro }}</p>
-        </div>
-        <br /><br />
+    </div>
+    <div class="right">
+      <br />
+      <div class="intro">
+        <p>{{ data.intro }}</p>
+      </div>
+      <br /><br />
 
-        <div class="education" *ngFor="let edu of data.education">
-          <hr />
-          <h4 style="
+      <div class="education" *ngFor="let edu of data.education">
+        <hr />
+        <h4 style="
               background-image: linear-gradient(
                 to right,
                 rgba(0, 81, 255, 0),
-                rgba(0, 30, 112, 0.03)
+                rgba(0, 89, 255, 0.2)
               );
             ">
-            Education
-          </h4>
+          Education
+        </h4>
 
-          <p>{{ edu.school }}</p>
-          <p>{{ edu.year }}</p>
-          <p>{{ edu.degree }}</p>
-        </div>
-        <div class="projects" *ngFor="let pro of data.projects">
-          <h4 style="
+        <p>{{ edu.school }}</p>
+        <p>{{ edu.year }}</p>
+        <p>{{ edu.degree }}</p>
+      </div>
+      <div class="projects" *ngFor="let pro of data.projects">
+        <h4 style="
               background-image: linear-gradient(
                 to right,
                 rgba(0, 4, 255, 0),
-                rgba(0, 81, 255, 0.03)
+                rgba(0, 89, 255, 0.2)
               );
             ">
-            Projects
-          </h4>
+          Projects
+        </h4>
 
-          <h2>{{ pro.title }}</h2>
-          <p>{{ pro.work }}</p>
-
-        </div>
+        <h2>{{ pro.title }}</h2>
+        <p>{{ pro.work }}</p>
 
       </div>
 
     </div>
+
   </div>
-  <button title="Download Resume" class="downloadbtn" style="border: none;" type="button" (click)="downloadPdf()"><i
-      style="font-size:40px;" class="fas fa-arrow-alt-circle-down "></i></button>
+  <button title="Download Resume" class="downloadbtn" style="border: none;" type="button"
+    (click)="downloadPdf()">Download Resume</button>
+
+  <div class="foot">
+    <footer>&copy; resume.com 2021</footer>
+  </div>
 
   <script>
     const button = document.querySelector("button");
